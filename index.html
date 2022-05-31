@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Chitsanupong Paenyoi">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <title>Random Lyric</title>
         <style>
             .container {
@@ -31,33 +31,22 @@
         </style>
     </head>
     <body>
-        <div class="ui container">
-            <div class="ui card fluid">
-                <div class="content">
-                    <div class="header">
-                        <h1>ทายเพลงจากเนื้อจ้า</h1>
-                        <div class="ui grey label">
-                            คะแนนที่ได้
-                            <div class="detail"><span id="score">0</span></div>
+        <div class="container">
+            <div class="card">
+                <div class="card-content"> 
+                    <div class="title has-text-centered">ทายเพลง</div>
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input type="text" class="input is-link" placeholder="เพลงไรเอ่ย" id="answer">
+                        </div>
+                        <div class="control">
+                            <button class="button is-success" id="submit">
+                                ตอบ
+                            </button>
                         </div>
                     </div>
-                    <div class="ui form">
-                        <div class="two fields">
-                            <div class="twelve wide field">
-                                <div class="ui input">
-                                    <input type="text" placeholder="เพลงไรเอ่ย" id="answer">
-                                </div>
-                            </div>
-                            <div class="four wide field">
-                                <button class="ui labeled icon button positive fluid" id="submit">
-                                    <i class="check circle icon"></i>
-                                    ตอบ
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p id="lyric"></p>
+                    <div class="content">
+                        <p id="lyric" style="text-align:center"></p>
                     </div>
                 </div>
             </div>
