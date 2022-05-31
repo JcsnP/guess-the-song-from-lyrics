@@ -83,7 +83,7 @@ submit_button.addEventListener('click', function() {
     const answer = document.getElementById('answer').value;
 
     // check value in answer input box
-    if(!answer) return alert('กรุณาตอบคำถามก้อนนนน');
+    if(!answer) return alert('กรุณาตอบก้อนนนน');
 
     if(answer.toLocaleLowerCase() === song.name.toLowerCase()) {
         score++;
