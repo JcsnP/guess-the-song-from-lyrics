@@ -5,12 +5,11 @@ body {
 }
 
 .container {
-    width: 590px !important;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 70% !important;
+    display: block;
+    margin: 7vh auto;
 }
+
 .header,
 .content {
     text-align: center;
@@ -23,9 +22,16 @@ body {
     margin-top: 10px;
 }
 #lyric {
-    font-size: 20px;
+    font-size: 1.4em;
+    line-height: 1.6em;
 }
 
 .card-content .is-2 {
- margin-top: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 780px) {
+    .container {
+        max-width: 50% !important;
+    }
 }
