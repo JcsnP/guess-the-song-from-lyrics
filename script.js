@@ -84,8 +84,15 @@ submit_button.addEventListener('click', function() {
     }
 
     document.getElementById('answer').value = "";
-    console.log(lyrics.length);
-    randomSong();
+    // console.log(lyrics.length);
+
+    if(lyrics.length) { 
+        randomSong();
+    } else {
+        console.log('out of music');
+        document.getElementById('lyric').innerHTML = 'เพลงหมดแล้ว'; 
+        return 0;
+    }
 });
 
 randomSong();

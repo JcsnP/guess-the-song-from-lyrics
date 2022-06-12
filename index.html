@@ -6,36 +6,20 @@
         <meta name="author" content="Chitsanupong Paenyoi">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <title>Random Lyric</title>
-        <style>
-            .container {
-                width: 590px !important;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .header,
-            .content {
-                text-align: center;
-                margin-bottom: 10px;
-            }
-            .content {
-                padding: 50px !important;
-            }
-            .description {
-                margin-top: 10px;
-            }
-            #lyric {
-                font-size: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
             <div class="card">
                 <div class="card-content"> 
-                    <div class="title has-text-centered">ทายเพลง</div>
-                    <span id="score"></span>
+                    <h2 class="title is-2 has-text-centered is-spaced">ทายเพลงสิจ๊ะ</h2>
+                    <h6 class="subtitle is-6 has-text-centered">ชื่อเพลงภาษาอังกฤษจะพิมพ์ขึ้นต้นด้วยพิมพ์เล็กหรือพิมพ์ใหญ่ก็ได้นะ</h6>
+                    <div class="tags has-addons is-justify-content-center">
+                        <span class="tag">
+                            คะแนนที่ได้
+                        </span>
+                        <span id="score" class="tag is-success">0</span>
+                    </div>
                     <div class="field has-addons">
                         <div class="control is-expanded">
                             <input type="text" class="input is-link" placeholder="เพลงไรเอ่ย" id="answer">

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700;800&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.container {
+    width: 590px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header,
+.content {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.content {
+    padding: 20px !important;
+}
+.description {
+    margin-top: 10px;
+}
+#lyric {
+    font-size: 20px;
+}
+
+.card-content .is-2 {
+ margin-top: 10px;
+}
