@@ -56,22 +56,7 @@ const lyrics = [
         lyric: "แค่ยอมปิดตาข้างนึง <br> ไม่ต้องเข้าใจเรื่องราว <br> แม้ความเป็นจริง <br> ที่เจอเธอและเขามีอะไรในความสัมพันธ์"
     }
 ]
-let usedSong = [];
-/*
-const lyric = lyrics[Math.floor(Math.random() * lyrics.length)];
 
-let flag = true;
-while(flag === true) {
-    usedSong.map((used_song) => {
-        if(used_song.name === song.name) {
-            song = lyrics[Math.floor(Math.random() * lyrics.length)];
-        } else {
-            flag = false;
-        }
-    });
-}
-do
-*/
 let song;
 
 const randomSong = () => {
@@ -89,15 +74,17 @@ submit_button.addEventListener('click', function() {
         score++;
         console.log('correct');
         document.getElementById('score').innerHTML = score;
+        // delete song from array
+        let index = lyrics.indexOf(song);
+        lyrics.splice(index, 1);
         // clear input
         document.getElementById('answer').value = "";
-        usedSong.push(song);    // for what?
     } else {
         console.log('incorrect');
     }
 
     document.getElementById('answer').value = "";
-    console.log(score);
+    console.log(lyrics.length);
     randomSong();
 });
 
